@@ -1,0 +1,104 @@
+@define-color bar-color #161d46;
+@define-color global-primary #7c79d3;
+@define-color global-secondary #db9fe9;
+@define-color global-text #4e55a5;
+@define-color global-highlighted #bcd6fb;
+@define-color global-warn #dda29f;
+/* @define-color global-warn #c0656c; */
+
+* {
+    font-family: 'JetBrains Mono';
+    color: @global-text;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0px;
+    background: transparent;
+    margin-top: 1px;
+}
+
+window#waybar {
+    background-color: @global-primary;
+    border-radius: 0px;
+    padding: 0px;
+    border-style: none;
+    background: transparent;
+}
+
+#custom-power, #workspaces, #temperature, #backlight, #cpu, #network, #battery, #custom-clock, #pulseaudio {
+    background-color: @global-primary;
+    margin: 2px 4px 2px 4px;
+    padding: 2px;
+    color: @global-highlighted;
+}
+
+#workspaces button label {
+    color: @global-highlighted;
+    font-weight: bold;
+}
+
+#workspaces button.focused label {
+    color: @global-secondary;
+}
+
+#custom-power {
+    font-size: 20px;
+    padding: 0px 12px 0px 6px;
+}
+
+#custom-power:hover {
+    color: @global-warn;
+}
+
+#custom-steam, #custom-discord, #custom-bluetooth {
+    background-color: @bar-color;
+    margin: 2px 4px 2px 4px;
+    padding: 2px;
+
+}
+
+
+#temperature:hover,  #backlight:hover, #cpu:hover, #network:hover, #battery:hover, #custom-clock:hover, #pulseaudio:hover {
+    color: @global-secondary;
+}
+
+#custom-steam:hover, #custom-discord:hover, #custom-bluetooth:hover {
+    color: @global-secondary;
+}
+
+:hover {
+    color: @global-highlighted;
+}
+
+#custom-clock {
+    margin-right: 3px;
+}
+
+#custom-steam.open, #custom-bluetooth.open, #custom-discord.open {
+    color: @global-highlighted;
+}
+
+#custom-steam.open:hover, #custom-bluetooth.open:hover, #custom-discord.open:hover {
+    color: @global-warn;
+}
+
+#custom-discord {
+    padding-left: 4px;
+}
+
+#custom-steam {
+    padding-left: 8px;
+}
+
+#custom-bluetooth {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+tooltip {
+    background-color: @global-primary;
+}
+
+tooltip label {
+    color: @global-highlighted;
+    text-shadow: none;
+}

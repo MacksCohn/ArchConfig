@@ -1,0 +1,62 @@
+@define-color bar-color #151c49;
+@define-color global-primary #7c79d3;
+@define-color global-secondary #a38de1;
+@define-color global-text #4e55a5;
+@define-color global-highlighted #bcd6fb;
+@define-color global-warn #dda29f;
+/* @define-color global-warn #c0656c; */
+
+* {
+    font-family: 'JetBrains Mono';
+    background: transparent;
+    color: @global-highlighted;
+}
+
+window#waybar {
+    border-radius: 20px;
+    background-color: alpha(@bar-color, .9999);
+}
+
+#custom-steam, #custom-discord, #custom-bluetooth, #backlight, #cpu, #network, #battery, #clock, #pulseaudio {
+    margin: 4px 10px;
+    border: 1px solid @global-highlighted;
+    border-radius: 40px;
+    padding: 2px 10px;
+}
+
+
+#custom-steam:hover, #custom-discord:hover, #custom-bluetooth:hover, #backlight:hover, #cpu:hover, #network:hover, #battery:hover, #clock:hover, #pulseaudio:hover {
+    border-color: @global-primary;
+    color: @global-primary;
+}
+
+:hover {
+
+}
+
+#clock {
+
+}
+
+#custom-steam.open, #custom-bluetooth.open, #custom-discord.open {
+    color: @global-secondary;
+
+}
+
+#custom-steam.open:hover, #custom-bluetooth.open:hover, #custom-discord.open:hover {
+}
+
+#custom-discord {
+}
+
+#custom-steam {
+}
+
+#custom-bluetooth {
+}
+
+tooltip {
+}
+
+tooltip label {
+}
