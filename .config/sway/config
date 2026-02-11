@@ -255,3 +255,6 @@ shadows disable
 
 for_window [app_id="kitty"] blur enable
 for_window [title="Lethal Company"] floating enable, inhibit_idle focus
+
+bindsym $mod+bracketleft exec ddcutil setvcp 10 10
+bindsym $mod+bracketright exec ddcutil setvcp 10 100
