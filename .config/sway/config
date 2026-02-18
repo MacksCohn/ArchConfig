@@ -256,5 +256,9 @@ shadows disable
 for_window [app_id="kitty"] blur enable
 for_window [title="Lethal Company"] floating enable, inhibit_idle focus
 
+# Monitor Brightness at home
 bindsym $mod+bracketleft exec ddcutil setvcp 10 10
 bindsym $mod+bracketright exec ddcutil setvcp 10 100
+# headphones pla pause
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
