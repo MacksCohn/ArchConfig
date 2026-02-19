@@ -49,11 +49,14 @@ window#waybar {
     color: @global-warn;
 }
 
-#custom-steam, #custom-discord, #custom-bluetooth {
+#custom-vpn, #custom-steam, #custom-discord, #custom-bluetooth {
     background-color: @bar-color;
     margin: 2px 4px 2px 4px;
     padding: 2px;
+}
 
+#custom-vpn {
+    padding: 0px 0px 0px 7px;
 }
 
 
@@ -61,7 +64,7 @@ window#waybar {
     color: @global-secondary;
 }
 
-#custom-steam:hover, #custom-discord:hover, #custom-bluetooth:hover {
+#custom-vpn:hover, #custom-steam:hover, #custom-discord:hover, #custom-bluetooth:hover {
     color: @global-secondary;
 }
 
@@ -73,11 +76,11 @@ window#waybar {
     margin-right: 3px;
 }
 
-#custom-steam.open, #custom-bluetooth.open, #custom-discord.open {
+#custom-vpn.open, #custom-steam.open, #custom-bluetooth.open, #custom-discord.open {
     color: @global-highlighted;
 }
 
-#custom-steam.open:hover, #custom-bluetooth.open:hover, #custom-discord.open:hover {
+#custom-vpn.open:hover, #custom-steam.open:hover, #custom-bluetooth.open:hover, #custom-discord.open:hover {
     color: @global-warn;
 }
 

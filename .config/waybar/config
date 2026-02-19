@@ -9,7 +9,7 @@
     "margin-left": 4,
 
     "modules-left": ["sway/workspaces"],
-    "modules-center": ["custom/discord", "custom/steam", "custom/bluetooth",],
+    "modules-center": ["custom/discord", "custom/steam", "custom/bluetooth", "custom/vpn"],
     "modules-right": ["temperature", "cpu", "network",  "backlight", "pulseaudio", "battery","custom/clock", "custom/power"],
 
     "custom/clock": {
@@ -110,6 +110,16 @@
         "format": "{temperatureC}°C",
         "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
         "critical-threshold": 80,
+        "tooltip": false,
+    },
+    "custom/vpn": {
+        "format": "󰒘 ",
+        "justify": "center",
+        "return-type": "json",
+        "exec": "/home/mackscohn/.config/waybar/scripts/tailscale-status.sh '󰒘 '",
+        "on-click": "tailscale up --exit-node=maxswonderfulhole; pkill -RTMIN+4 waybar",
+        "on-click-right": "tailscale up --exit-node=; pkill -RTMIN+4 waybar",
+        "signal": 4,
         "tooltip": false,
     },
 }
