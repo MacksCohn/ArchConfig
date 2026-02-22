@@ -167,7 +167,7 @@ input type:touchpad {
     bindsym $mod+a focus parent
 #
 # Scratchpad:
-#
+
     # Sway has a "scratchpad", which is a bag of holding for windows.
     # You can send windows there and get them back later.
 
@@ -262,3 +262,5 @@ bindsym $mod+bracketright exec ddcutil setvcp 10 100
 # headphones pla pause
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause
+
+bindsym mod4+Shift+s exec grim -g "$(slurp)" - | swappy -f -
