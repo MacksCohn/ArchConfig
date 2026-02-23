@@ -8,7 +8,7 @@
     "margin-right": 4,
     "margin-left": 4,
 
-    "modules-left": ["sway/workspaces"],
+    "modules-left": ["sway/workspaces", "custom/updater"],
     "modules-center": ["custom/discord", "custom/steam", "custom/bluetooth", "custom/vpn"],
     "modules-right": ["temperature", "cpu", "network",  "backlight", "pulseaudio", "battery","custom/clock", "custom/power"],
 
@@ -121,6 +121,10 @@
         "on-click-right": "tailscale up --exit-node=; pkill -RTMIN+4 waybar",
         "signal": 4,
         "tooltip": false,
+    },
+    "custom/updater": {
+        "exec": "pkill -RTMIN+4 waybar",
+        "interval": 5,
     },
 }
 
