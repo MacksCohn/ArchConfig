@@ -60,7 +60,7 @@ input type:touchpad {
 #   input type:keyboard {
 #       xkb_layout "eu"
 #   }
-#
+
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
 
@@ -264,3 +264,5 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause
 
 bindsym mod4+Shift+s exec grim -g "$(slurp)" - | swappy -f -
+
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
