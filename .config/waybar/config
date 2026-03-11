@@ -42,7 +42,7 @@
     },
     "custom/power": {
         "format": "",
-        "on-click": "sleep .1 && poweroff",
+        "on-click": "sleep .1 && systemctl hibernate",
         "tooltip": false,
     },
     "pulseaudio": {
