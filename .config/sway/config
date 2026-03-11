@@ -255,6 +255,7 @@ shadows disable
 
 for_window [app_id="kitty"] blur enable
 for_window [title="Lethal Company"] floating enable, inhibit_idle focus
+for_window [app_id="swappy"] floating enable, sticky enable, focus
 
 # Monitor Brightness at home
 bindsym $mod+bracketleft exec ddcutil setvcp 10 10
