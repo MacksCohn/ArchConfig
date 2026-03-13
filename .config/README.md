@@ -12,3 +12,9 @@ measures ram temperatures
 ```
 blacklist spd5118
 ```
+
+Get `informant` from yay to make updates tell me what to do to not break things.
+
+inside /etc/pacman.conf bc kernel is cringe rn idk:
+IgnorePkg   = linux linux-headers nvidia-open-dkms
+
