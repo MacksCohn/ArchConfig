@@ -258,7 +258,7 @@ for_window [title="Lethal Company"] floating enable, inhibit_idle focus
 for_window [app_id="swappy"] floating enable, sticky enable, focus
 
 # Monitor Brightness at home
-bindsym $mod+bracketleft exec ddcutil setvcp 10 10
+bindsym $mod+bracketleft exec ddcutil setvcp 10 0
 bindsym $mod+bracketright exec ddcutil setvcp 10 100
 # headphones pla pause
 bindsym XF86AudioPlay exec playerctl play-pause
