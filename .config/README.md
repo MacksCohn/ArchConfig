@@ -18,3 +18,9 @@ Get `informant` from yay to make updates tell me what to do to not break things.
 inside /etc/pacman.conf bc kernel is cringe rn idk:
 IgnorePkg   = linux linux-headers nvidia-open-dkms
 
+Reminder:
+for pro controllers to connect
+search
+right click pair
+right click trust
+THEN connect
