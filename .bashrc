@@ -12,7 +12,7 @@ alias vim=nvim
 alias ff='clear && fastfetch'
 alias bluetooth=bluedevil-wizard
 alias rvim='sudo nvim'
-alias o='dolphin . &'
+alias o='dolphin . & disown'
 alias edit-grub='sudo mount /dev/nvme0n1p2 /mnt; sudo mount /dev/nvme0n1p1 /mnt/boot; sudo arch-chroot /mnt'
 alias grep='grep --color=auto'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
